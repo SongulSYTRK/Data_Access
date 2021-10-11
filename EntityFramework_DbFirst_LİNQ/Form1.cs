@@ -196,7 +196,7 @@ namespace EntityFramework_DbFirst_LİNQ
         {
             decimal? expensiveProduct = db.Products.Max(x => x.UnitPrice);
             decimal? cheaperProduct = db.Products.Min(x => x.UnitPrice);
-            Message.Show($"Expensive Product : {expensiveProduct} \nCheaper Product : {cheaperProduct}");
+            MessageBox.Show( $"Expensive Product : {expensiveProduct} \nCheaper Product : {cheaperProduct}");
         }
 
         private void btnexample_13_Click(object sender, EventArgs e)
@@ -217,6 +217,30 @@ namespace EntityFramework_DbFirst_LİNQ
             foreach (var item in countries)
             {
                 listBox1.Items.Add(item);
+            }
+        }
+
+        private void btnsingleordefault_Click(object sender, EventArgs e)
+        {
+            Product product = db.Products.SingleOrDefault(x => x.UnitPrice>200);
+            if (product == null)
+                MessageBox.Show("Don't have product");
+            else
+                listBox1.Items.Add(product.ProductName);
+        }
+
+        private void btnsingle_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Product product = db.Products.Single(x => x.UnitPrice > 25);
+                listBox1.Items.Add(product.ProductName);
+
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("We dont find product  or we find more product");
             }
         }
     }

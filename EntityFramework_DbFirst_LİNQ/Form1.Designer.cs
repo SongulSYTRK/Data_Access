@@ -50,6 +50,8 @@ namespace EntityFramework_DbFirst_LİNQ
             this.button1 = new System.Windows.Forms.Button();
             this.btnorderby = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.btnsingleordefault = new System.Windows.Forms.Button();
+            this.btnsingle = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -262,11 +264,33 @@ namespace EntityFramework_DbFirst_LİNQ
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
+            // btnsingleordefault
+            // 
+            this.btnsingleordefault.Location = new System.Drawing.Point(608, 12);
+            this.btnsingleordefault.Name = "btnsingleordefault";
+            this.btnsingleordefault.Size = new System.Drawing.Size(142, 44);
+            this.btnsingleordefault.TabIndex = 23;
+            this.btnsingleordefault.Text = "SingleorDefault";
+            this.btnsingleordefault.UseVisualStyleBackColor = true;
+            this.btnsingleordefault.Click += new System.EventHandler(this.btnsingleordefault_Click);
+            // 
+            // btnsingle
+            // 
+            this.btnsingle.Location = new System.Drawing.Point(609, 63);
+            this.btnsingle.Name = "btnsingle";
+            this.btnsingle.Size = new System.Drawing.Size(141, 57);
+            this.btnsingle.TabIndex = 24;
+            this.btnsingle.Text = "Single";
+            this.btnsingle.UseVisualStyleBackColor = true;
+            this.btnsingle.Click += new System.EventHandler(this.btnsingle_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnsingle);
+            this.Controls.Add(this.btnsingleordefault);
             this.Controls.Add(this.btnGroupBy);
             this.Controls.Add(this.btnexample_16);
             this.Controls.Add(this.btnMax_Min);
@@ -318,6 +342,8 @@ namespace EntityFramework_DbFirst_LİNQ
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnorderby;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnsingleordefault;
+        private System.Windows.Forms.Button btnsingle;
     }
 }
 
