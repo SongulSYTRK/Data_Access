@@ -11,7 +11,8 @@
 
 <br> We have EF approaches : 
  <br>  1)Model First
- <br> 2) [Database First] (https://github.com/SongulSYTRK/Data_Access/tree/master/EntityFramework_DbFirst_L%C4%B0NQ)
+
+ <br> 2) [DatabaseFirst ](https://github.com/SongulSYTRK/Data_Access/tree/master/EntityFramework_DbFirst_L%C4%B0NQ)
  <br> 3)Code First:By Code
 
 <br> ![image](https://user-images.githubusercontent.com/90280719/136834114-1608a3a0-8720-41b5-acc0-c6fba625b05a.png)
