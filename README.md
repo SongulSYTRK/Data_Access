@@ -9,10 +9,10 @@
 # Entity FrameWork
 # Entity Framework is a tool for Object Relational Mapping.It is like a bridge between OOP and Relational Data Base.Entity Frame Work works as an assistans by getting data and bound your database object.Entity Framework works with Ado.Net.
 
-# <br> We have EF approaches : 
-# <br>  1)Model First
-# <br> 2)Database First
-# <br> 3)Code First:By Code
+<br> We have EF approaches : 
+ <br>  1)Model First
+ <br> 2)Database First
+ <br> 3)Code First:By Code
 
 <br> ![image](https://user-images.githubusercontent.com/90280719/136834114-1608a3a0-8720-41b5-acc0-c6fba625b05a.png)
 
