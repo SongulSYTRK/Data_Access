@@ -5,10 +5,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8F76758E-BD7E-44D0-B23D-1FE4EFEE0656}</ProjectGuid>
+    <ProjectGuid>{3F2A0473-7F68-4809-A8D6-E3041726609A}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>EntityFramework_DbFirst_LİNQ</RootNamespace>
-    <AssemblyName>EntityFramework_DbFirst_LİNQ</AssemblyName>
+    <RootNamespace>LinQ_To_Sql_Example</RootNamespace>
+    <AssemblyName>LinQ_To_Sql_Example</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -156,8 +156,8 @@
   <ItemGroup>
     <Content Include="Models\Northwind.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>Northwind.Context.cs</LastGenOutput>
       <DependentUpon>Northwind.edmx</DependentUpon>
+      <LastGenOutput>Northwind.Context.cs</LastGenOutput>
     </Content>
     <Content Include="Models\Northwind.tt">
       <Generator>TextTemplatingFileGenerator</Generator>

@@ -243,6 +243,38 @@ namespace EntityFramework_DbFirst_LİNQ
                 MessageBox.Show("We dont find product  or we find more product");
             }
         }
+
+        private void btnJoin_Click(object sender, EventArgs e)
+        {
+            #region linQ to Entity join_Example_1
+            dataGridView1.DataSource = db.Categories
+                              .Join(db.Products, c => c.CategoryID, p => p.ProductID, (c, p) => new { c, p })
+                              .GroupBy(x => x.c.CategoryID)
+                              .Select(x => new
+                              {
+                                  CategoryId = x.Key,
+                                  Count = x.Sum(z => z.p.UnitsInStock)
+                              })
+                              .OrderByDescending(x => x.Count)
+                              .ToList();
+
+            #endregion
+
+            #region LinQ to Entity join_Example_2
+            dataGridView1.DataSource = db.Products
+                              .Join(db.Order_Details, p => p.ProductID, Od => Od.ProductID, (p, Od) => new { p, Od })
+                              //birden fazla kullanacağım için newledim.
+                              .GroupBy(x => x.p.ProductName)
+                              .Select(x => new
+                              {
+                                  ProductName = x.Key,
+                                  Miktar = x.Sum(z => z.Od.Quantity),
+                                  Gelir = x.Sum(z => z.Od.Quantity * z.Od.UnitPrice * (int)Math.Floor(1 - z.Od.Discount))
+                              })
+                              .OrderBy(x => x.Gelir)
+                              .ToList();
+#endregion
+        }
     }
 }
 

@@ -52,6 +52,7 @@ namespace EntityFramework_DbFirst_LİNQ
             this.button4 = new System.Windows.Forms.Button();
             this.btnsingleordefault = new System.Windows.Forms.Button();
             this.btnsingle = new System.Windows.Forms.Button();
+            this.btnJoin = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -284,11 +285,22 @@ namespace EntityFramework_DbFirst_LİNQ
             this.btnsingle.UseVisualStyleBackColor = true;
             this.btnsingle.Click += new System.EventHandler(this.btnsingle_Click);
             // 
+            // btnJoin
+            // 
+            this.btnJoin.Location = new System.Drawing.Point(609, 127);
+            this.btnJoin.Name = "btnJoin";
+            this.btnJoin.Size = new System.Drawing.Size(141, 54);
+            this.btnJoin.TabIndex = 25;
+            this.btnJoin.Text = "Join_Example";
+            this.btnJoin.UseVisualStyleBackColor = true;
+            this.btnJoin.Click += new System.EventHandler(this.btnJoin_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnJoin);
             this.Controls.Add(this.btnsingle);
             this.Controls.Add(this.btnsingleordefault);
             this.Controls.Add(this.btnGroupBy);
@@ -344,6 +356,7 @@ namespace EntityFramework_DbFirst_LİNQ
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button btnsingleordefault;
         private System.Windows.Forms.Button btnsingle;
+        private System.Windows.Forms.Button btnJoin;
     }
 }
 
