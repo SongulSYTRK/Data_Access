@@ -27,5 +27,5 @@
 <br> 1-[DbFirst_LinQ_To_Entity_Example](https://github.com/SongulSYTRK/Data_Access/tree/master/EntityFramework_DbFirst_L%C4%B0NQ)
 <br> 2-[DbFirst_LinQ_To_Sql_Example](https://github.com/SongulSYTRK/Data_Access/tree/master/LinQ_To_Sql_Example)
 <br> 3-[CodeFirst_PhoneDirectory_Example](https://github.com/SongulSYTRK/Data_Access/tree/master/CodeFirst_PhoneDirectory_Example)
-<br> 4-[CodeFirst_MyNorthwind_Example](https://github.com/SongulSYTRK/Data_Access/tree/master/Code_First_Example)
+<br> 4-[CodeFirst_MyNorthwind_LazyLoading](https://github.com/SongulSYTRK/Data_Access/tree/master/Code_First_Example)
 
