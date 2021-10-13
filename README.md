@@ -1,7 +1,7 @@
 
 # What is ORM(Object-Relational Mapping)?
 # ORM acts as a bridge between software and database. We can query, read and make changes to our data.Object-relational-mapping is the idea of being able to write queries , as well as much more complicated ones, using the object-oriented paradigm of your preferred programming language.
-<br>                       ![image](https://user-images.githubusercontent.com/90280719/137193402-eb504d72-a8b7-4efa-83e5-895484e1bb98.png)
+<br> ![image](https://user-images.githubusercontent.com/90280719/137193402-eb504d72-a8b7-4efa-83e5-895484e1bb98.png)
 
 
 
@@ -12,7 +12,10 @@
 # <br> We have EF approaches : 
  <br>  1)ModelFirst
  <br> 2) DbFirst
- <br> 3)CodeFirst:
+ <br> 3)CodeFirst
+ 
+ <br> ![image](https://user-images.githubusercontent.com/90280719/137194746-f25d03b7-f030-435d-8c07-b4127df7b9f2.png)
+
  
 # What is Lazy Loading?
 # <br> Lazy Loading moves the entire data to the heap area of ​​the ram. According to the need, the data is taken from the heap area.
