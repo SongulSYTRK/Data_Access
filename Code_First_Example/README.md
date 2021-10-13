@@ -1,3 +1,3 @@
 # CodeFirst
-# <br> We write our own database in c# . The codes you have written will create the database and your tables. We created a database on Sql with our C# codes.We used lazy method to link multiple objects together
+# <br> We write our own database in c# . All classes are created on the Visual Studio manually.. We created a database on Sql with our C# codes.We used lazy method to link multiple objects together
 
