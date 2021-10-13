@@ -12,6 +12,8 @@ namespace EntityFramework_DbFirst_LİNQ.Models
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
+    using System.Data.Entity.Core.Objects;
+    using System.Linq;
     
     public partial class NorthwindEntities : DbContext
     {
@@ -38,5 +40,7 @@ namespace EntityFramework_DbFirst_LİNQ.Models
         public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
         public virtual DbSet<Territory> Territories { get; set; }
         public virtual DbSet<test_env_Calisanlar> test_env_Calisanlar { get; set; }
+    
+      
     }
 }

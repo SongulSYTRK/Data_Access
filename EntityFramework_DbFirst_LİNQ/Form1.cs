@@ -275,6 +275,11 @@ namespace EntityFramework_DbFirst_LİNQ
                               .ToList();
 #endregion
         }
+
+        private void btnSP_Click(object sender, EventArgs e)
+        {
+          
+        }
     }
 }
 

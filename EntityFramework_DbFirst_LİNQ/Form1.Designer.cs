@@ -53,26 +53,27 @@ namespace EntityFramework_DbFirst_LİNQ
             this.btnsingleordefault = new System.Windows.Forms.Button();
             this.btnsingle = new System.Windows.Forms.Button();
             this.btnJoin = new System.Windows.Forms.Button();
+            this.btnSP = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 198);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 258);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(495, 219);
+            this.dataGridView1.Size = new System.Drawing.Size(495, 180);
             this.dataGridView1.TabIndex = 0;
             // 
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 16;
-            this.listBox1.Location = new System.Drawing.Point(512, 198);
+            this.listBox1.Location = new System.Drawing.Point(512, 274);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(276, 212);
+            this.listBox1.Size = new System.Drawing.Size(276, 164);
             this.listBox1.TabIndex = 1;
             // 
             // btnTolist
@@ -87,7 +88,7 @@ namespace EntityFramework_DbFirst_LİNQ
             // 
             // btnGroupBy
             // 
-            this.btnGroupBy.Location = new System.Drawing.Point(302, 62);
+            this.btnGroupBy.Location = new System.Drawing.Point(197, 113);
             this.btnGroupBy.Name = "btnGroupBy";
             this.btnGroupBy.Size = new System.Drawing.Size(99, 45);
             this.btnGroupBy.TabIndex = 21;
@@ -97,9 +98,9 @@ namespace EntityFramework_DbFirst_LİNQ
             // 
             // btnexample_16
             // 
-            this.btnexample_16.Location = new System.Drawing.Point(503, 112);
+            this.btnexample_16.Location = new System.Drawing.Point(302, 175);
             this.btnexample_16.Name = "btnexample_16";
-            this.btnexample_16.Size = new System.Drawing.Size(99, 46);
+            this.btnexample_16.Size = new System.Drawing.Size(89, 46);
             this.btnexample_16.TabIndex = 20;
             this.btnexample_16.Text = "Distinct";
             this.btnexample_16.UseVisualStyleBackColor = true;
@@ -107,7 +108,7 @@ namespace EntityFramework_DbFirst_LİNQ
             // 
             // btnMax_Min
             // 
-            this.btnMax_Min.Location = new System.Drawing.Point(408, 109);
+            this.btnMax_Min.Location = new System.Drawing.Point(301, 115);
             this.btnMax_Min.Name = "btnMax_Min";
             this.btnMax_Min.Size = new System.Drawing.Size(89, 49);
             this.btnMax_Min.TabIndex = 19;
@@ -117,7 +118,7 @@ namespace EntityFramework_DbFirst_LİNQ
             // 
             // btnexample_14
             // 
-            this.btnexample_14.Location = new System.Drawing.Point(503, 62);
+            this.btnexample_14.Location = new System.Drawing.Point(397, 61);
             this.btnexample_14.Name = "btnexample_14";
             this.btnexample_14.Size = new System.Drawing.Size(99, 45);
             this.btnexample_14.TabIndex = 18;
@@ -127,7 +128,7 @@ namespace EntityFramework_DbFirst_LİNQ
             // 
             // btnexample_13
             // 
-            this.btnexample_13.Location = new System.Drawing.Point(503, 11);
+            this.btnexample_13.Location = new System.Drawing.Point(397, 12);
             this.btnexample_13.Name = "btnexample_13";
             this.btnexample_13.Size = new System.Drawing.Size(99, 45);
             this.btnexample_13.TabIndex = 17;
@@ -137,7 +138,7 @@ namespace EntityFramework_DbFirst_LİNQ
             // 
             // btnexample_12
             // 
-            this.btnexample_12.Location = new System.Drawing.Point(408, 62);
+            this.btnexample_12.Location = new System.Drawing.Point(302, 63);
             this.btnexample_12.Name = "btnexample_12";
             this.btnexample_12.Size = new System.Drawing.Size(89, 45);
             this.btnexample_12.TabIndex = 16;
@@ -147,7 +148,7 @@ namespace EntityFramework_DbFirst_LİNQ
             // 
             // btnStart_End_With
             // 
-            this.btnStart_End_With.Location = new System.Drawing.Point(407, 12);
+            this.btnStart_End_With.Location = new System.Drawing.Point(301, 11);
             this.btnStart_End_With.Name = "btnStart_End_With";
             this.btnStart_End_With.Size = new System.Drawing.Size(90, 44);
             this.btnStart_End_With.TabIndex = 15;
@@ -157,7 +158,7 @@ namespace EntityFramework_DbFirst_LİNQ
             // 
             // btnContai
             // 
-            this.btnContai.Location = new System.Drawing.Point(302, 113);
+            this.btnContai.Location = new System.Drawing.Point(197, 170);
             this.btnContai.Name = "btnContai";
             this.btnContai.Size = new System.Drawing.Size(99, 45);
             this.btnContai.TabIndex = 14;
@@ -167,7 +168,7 @@ namespace EntityFramework_DbFirst_LİNQ
             // 
             // btnSkip
             // 
-            this.btnSkip.Location = new System.Drawing.Point(302, 12);
+            this.btnSkip.Location = new System.Drawing.Point(197, 62);
             this.btnSkip.Name = "btnSkip";
             this.btnSkip.Size = new System.Drawing.Size(99, 44);
             this.btnSkip.TabIndex = 13;
@@ -177,9 +178,9 @@ namespace EntityFramework_DbFirst_LİNQ
             // 
             // btnTake
             // 
-            this.btnTake.Location = new System.Drawing.Point(197, 113);
+            this.btnTake.Location = new System.Drawing.Point(101, 170);
             this.btnTake.Name = "btnTake";
-            this.btnTake.Size = new System.Drawing.Size(99, 51);
+            this.btnTake.Size = new System.Drawing.Size(90, 51);
             this.btnTake.TabIndex = 11;
             this.btnTake.Text = "Take";
             this.btnTake.UseVisualStyleBackColor = true;
@@ -187,9 +188,9 @@ namespace EntityFramework_DbFirst_LİNQ
             // 
             // btnFind
             // 
-            this.btnFind.Location = new System.Drawing.Point(197, 62);
+            this.btnFind.Location = new System.Drawing.Point(101, 113);
             this.btnFind.Name = "btnFind";
-            this.btnFind.Size = new System.Drawing.Size(99, 45);
+            this.btnFind.Size = new System.Drawing.Size(90, 45);
             this.btnFind.TabIndex = 9;
             this.btnFind.Text = "Find";
             this.btnFind.UseVisualStyleBackColor = true;
@@ -197,7 +198,7 @@ namespace EntityFramework_DbFirst_LİNQ
             // 
             // btnfirst_default
             // 
-            this.btnfirst_default.Location = new System.Drawing.Point(197, 12);
+            this.btnfirst_default.Location = new System.Drawing.Point(197, 11);
             this.btnfirst_default.Name = "btnfirst_default";
             this.btnfirst_default.Size = new System.Drawing.Size(99, 44);
             this.btnfirst_default.TabIndex = 8;
@@ -207,9 +208,9 @@ namespace EntityFramework_DbFirst_LİNQ
             // 
             // BtnFirst
             // 
-            this.BtnFirst.Location = new System.Drawing.Point(101, 113);
+            this.BtnFirst.Location = new System.Drawing.Point(21, 170);
             this.BtnFirst.Name = "BtnFirst";
-            this.BtnFirst.Size = new System.Drawing.Size(90, 51);
+            this.BtnFirst.Size = new System.Drawing.Size(74, 51);
             this.BtnFirst.TabIndex = 7;
             this.BtnFirst.Text = "First ";
             this.BtnFirst.UseVisualStyleBackColor = true;
@@ -267,9 +268,9 @@ namespace EntityFramework_DbFirst_LİNQ
             // 
             // btnsingleordefault
             // 
-            this.btnsingleordefault.Location = new System.Drawing.Point(608, 12);
+            this.btnsingleordefault.Location = new System.Drawing.Point(396, 177);
             this.btnsingleordefault.Name = "btnsingleordefault";
-            this.btnsingleordefault.Size = new System.Drawing.Size(142, 44);
+            this.btnsingleordefault.Size = new System.Drawing.Size(100, 44);
             this.btnsingleordefault.TabIndex = 23;
             this.btnsingleordefault.Text = "SingleorDefault";
             this.btnsingleordefault.UseVisualStyleBackColor = true;
@@ -277,9 +278,9 @@ namespace EntityFramework_DbFirst_LİNQ
             // 
             // btnsingle
             // 
-            this.btnsingle.Location = new System.Drawing.Point(609, 63);
+            this.btnsingle.Location = new System.Drawing.Point(396, 111);
             this.btnsingle.Name = "btnsingle";
-            this.btnsingle.Size = new System.Drawing.Size(141, 57);
+            this.btnsingle.Size = new System.Drawing.Size(100, 57);
             this.btnsingle.TabIndex = 24;
             this.btnsingle.Text = "Single";
             this.btnsingle.UseVisualStyleBackColor = true;
@@ -287,7 +288,7 @@ namespace EntityFramework_DbFirst_LİNQ
             // 
             // btnJoin
             // 
-            this.btnJoin.Location = new System.Drawing.Point(609, 127);
+            this.btnJoin.Location = new System.Drawing.Point(502, 11);
             this.btnJoin.Name = "btnJoin";
             this.btnJoin.Size = new System.Drawing.Size(141, 54);
             this.btnJoin.TabIndex = 25;
@@ -295,11 +296,22 @@ namespace EntityFramework_DbFirst_LİNQ
             this.btnJoin.UseVisualStyleBackColor = true;
             this.btnJoin.Click += new System.EventHandler(this.btnJoin_Click);
             // 
+            // btnSP
+            // 
+            this.btnSP.Location = new System.Drawing.Point(502, 72);
+            this.btnSP.Name = "btnSP";
+            this.btnSP.Size = new System.Drawing.Size(141, 45);
+            this.btnSP.TabIndex = 26;
+            this.btnSP.Text = "SP Example ";
+            this.btnSP.UseVisualStyleBackColor = true;
+            this.btnSP.Click += new System.EventHandler(this.btnSP_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnSP);
             this.Controls.Add(this.btnJoin);
             this.Controls.Add(this.btnsingle);
             this.Controls.Add(this.btnsingleordefault);
@@ -357,6 +369,7 @@ namespace EntityFramework_DbFirst_LİNQ
         private System.Windows.Forms.Button btnsingleordefault;
         private System.Windows.Forms.Button btnsingle;
         private System.Windows.Forms.Button btnJoin;
+        private System.Windows.Forms.Button btnSP;
     }
 }
 

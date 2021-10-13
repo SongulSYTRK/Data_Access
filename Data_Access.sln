@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityFramework_DbFirst_Lİ
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinQ_To_Sql_Example", "LinQ_To_Sql_Example\LinQ_To_Sql_Example.csproj", "{3F2A0473-7F68-4809-A8D6-E3041726609A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Code_First_Example", "Code_First_Example\Code_First_Example.csproj", "{C87FF404-5D28-4FB5-A446-63317F41B3C4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{3F2A0473-7F68-4809-A8D6-E3041726609A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F2A0473-7F68-4809-A8D6-E3041726609A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F2A0473-7F68-4809-A8D6-E3041726609A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C87FF404-5D28-4FB5-A446-63317F41B3C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C87FF404-5D28-4FB5-A446-63317F41B3C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C87FF404-5D28-4FB5-A446-63317F41B3C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C87FF404-5D28-4FB5-A446-63317F41B3C4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
