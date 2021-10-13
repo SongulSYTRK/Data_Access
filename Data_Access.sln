@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinQ_To_Sql_Example", "LinQ
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Code_First_Example", "Code_First_Example\Code_First_Example.csproj", "{C87FF404-5D28-4FB5-A446-63317F41B3C4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeFirst_PhoneDirectory_Example", "CodeFirst_PhoneDirectory_Example\CodeFirst_PhoneDirectory_Example.csproj", "{3E917FE7-437A-4737-A4D6-678F8D0A0F53}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{C87FF404-5D28-4FB5-A446-63317F41B3C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C87FF404-5D28-4FB5-A446-63317F41B3C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C87FF404-5D28-4FB5-A446-63317F41B3C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E917FE7-437A-4737-A4D6-678F8D0A0F53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E917FE7-437A-4737-A4D6-678F8D0A0F53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E917FE7-437A-4737-A4D6-678F8D0A0F53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E917FE7-437A-4737-A4D6-678F8D0A0F53}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
