@@ -1,7 +1,7 @@
 
 # What is ORM(Object-Relational Mapping)?
 # ORM acts as a bridge between software and database. We can query, read and make changes to our data.Object-relational-mapping is the idea of being able to write queries , as well as much more complicated ones, using the object-oriented paradigm of your preferred programming language.
-<br>![image](https://user-images.githubusercontent.com/90280719/137193402-eb504d72-a8b7-4efa-83e5-895484e1bb98.png)
+                       <br>![image](https://user-images.githubusercontent.com/90280719/137193402-eb504d72-a8b7-4efa-83e5-895484e1bb98.png)
 
 
 
