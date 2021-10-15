@@ -79,21 +79,7 @@ namespace Dapper_MicroOrm_Example1
                 con.Close();
             }
         }
-
-        private void btnGroupBy_Click(object sender, EventArgs e)
-        {
-
-            using (IDbConnection con = new SqlConnection("Server =DESKTOP-Q9BCSBK;Database=Northwind;Integrated Security=True;"))
-            {
-                con.Open();
-
-                dataGridView1.DataSource = con.Query<Products>(" select COUNT(UnitPrice) from Products where UnitPrice < 35 group by CategoryID ").ToList();
-
-                con.Close();
-            }
-
-        }
-
+       
         private void btnCount_Click(object sender, EventArgs e)
         {
             using (IDbConnection con = new SqlConnection("Server =DESKTOP-Q9BCSBK;Database=Northwind;Integrated Security=True;"))
@@ -182,10 +168,10 @@ namespace Dapper_MicroOrm_Example1
         {
             using (IDbConnection con = new SqlConnection("Server =DESKTOP-Q9BCSBK;Database=Northwind;Integrated Security=True;"))
             {
-                con.Open();
+             con.Open();
 
-                var sql = "Select * From Products where UnitPrice >50 order by ProductName ;" +
-                         " Select * From Categories where CategoryID > 6 order by CategoryName Desc";
+             var sql = "Select * From Products where UnitPrice >50 order by ProductName ;" +
+                       " Select * From Categories where CategoryID > 6 order by CategoryName Desc";
                 
                 var multiQuery = con.QueryMultiple(sql);
                 var productList = multiQuery.Read<Products>().ToList();
