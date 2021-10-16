@@ -29,16 +29,16 @@ namespace Dapper_CRUD_Example
             product.ProductName = txtProductName.Text;
             product.UnitPrice =int.Parse( txtUnitpriceProduct.Text);
             product.UnitsInStock = int.Parse(txtunitInStockCreate.Text);
+            productRepo.Create(product, dataGridView1);
             product.CreateDate = DateTime.Now;
 
         }
 
         private void button1_Click(object sender, EventArgs e)//Delete
         {
-            Products product = new Products();
-            productRepo.Delete(product,dataGridView1);
+            Products product = new Products();            
             product.ProductID = int.Parse(txtId.Text);
-            
+            productRepo.Delete(product, dataGridView1);
             product.Status = Status.Passive;
           
          
@@ -53,11 +53,12 @@ namespace Dapper_CRUD_Example
         private void button1_Click_1(object sender, EventArgs e)//Update
         {
             Products product = new Products();
-            productRepo.Update(product, dataGridView1);
+           
             product.ProductID=int.Parse(txtId.Text);
             product.ProductName = txtNameUpdatePRoduct.Text;
             product.UnitPrice = int.Parse(txtUnitpriceProduct.Text);
             product.UnitsInStock = int.Parse(txtUnitstockUpdateProduct.Text);
+            productRepo.Update(product, dataGridView1);
             product.Status = Status.Modified;
         }
         #endregion
@@ -71,17 +72,19 @@ namespace Dapper_CRUD_Example
         private void btnCreate_Click(object sender, EventArgs e)
         {
             Categories categories = new Categories();
-            categoryRepo.Create(categories, dataGridView1);
             categories.CategoryName = txtCategoryName.Text;
             categories.Description = txtDescription.Text;
+            categoryRepo.Create(categories, dataGridView1);
+            
 
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
             Categories categories = new Categories();
-            categoryRepo.Delete(categories, dataGridView1);
+            
             categories.CategoryId = int.Parse(txtCatgoryID.Text);
+            categoryRepo.Delete(categories, dataGridView1);
             categories.Status = Status.Passive;
         }
 
@@ -92,6 +95,7 @@ namespace Dapper_CRUD_Example
             categories.CategoryId = int.Parse(txtCatgoryID.Text);
             categories.CategoryName = txtCategoryName.Text;
             categories.Description = txtDescription.Text;
+            categoryRepo.Update(categories, dataGridView1);
             categories.Status = Status.Passive;
 
         }
