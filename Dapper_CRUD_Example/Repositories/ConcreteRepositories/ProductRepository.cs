@@ -24,7 +24,7 @@ namespace Dapper_CRUD_Example.Repositories.ConcreteRepositories
             using (IDbConnection con = new SqlConnection("Server =DESKTOP-Q9BCSBK;Database=Northwind;Integrated Security=True;"))
             {
                 con.Open();
-                con.Execute("INSERT INTO Products (ProductName , UnitPrice , UnitInStock) Values (@ProductName, @UnitPrice , @UnitInStock);",(new { ProductName =item.ProductName, UnitPrice =item.UnitPrice, UnitInStock = item.UnitsInStock } ));  // Bu kod hata veriyor çalışmıyor hocaya sor?!!!
+                con.Execute("INSERT INTO Products (ProductName , UnitPrice , UnitInStock) Values (@ProductName, @UnitPrice , @UnitInStock);",(new { ProductName =item.ProductName, UnitPrice =item.UnitPrice, UnitInStock = item.UnitsInStock } ));  // Bu kod hata veriyor çalışmıyor araştır?!!!
 
                 //con.Execute("INSERT INTO Products (ProductName) Values (@ProductName );", new[] { new { @ProductName = item.ProductName}, new { @ProductName = item.ProductName}, new { @ProductName = item.ProductName} });  //=>Multiple Added 
 
