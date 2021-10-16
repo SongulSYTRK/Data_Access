@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{CBF37F74-240B-4B0B-BA72-B91EAD2BAE4A}</ProjectGuid>
+    <ProjectGuid>{DEC422B5-239A-42B1-9FBF-F8F14C168E3A}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Dapper_MicroOrm_Example1</RootNamespace>
-    <AssemblyName>Dapper_MicroOrm_Example1</AssemblyName>
+    <RootNamespace>Dapper_CRUD_Example</RootNamespace>
+    <AssemblyName>Dapper_CRUD_Example</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -37,10 +37,6 @@
       <HintPath>..\packages\Dapper.2.0.90\lib\net461\Dapper.dll</HintPath>
     </Reference>
     <Reference Include="System" />
-    <Reference Include="System.ComponentModel.Annotations, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.ComponentModel.Annotations.5.0.0\lib\net461\System.ComponentModel.Annotations.dll</HintPath>
-    </Reference>
-    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -53,7 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Entities\Abstract\IBaseEntity.cs" />
+    <Compile Include="Entities\BaseEntity\BaseEntity.cs" />
     <Compile Include="Entities\Concrete\Categories.cs" />
     <Compile Include="Entities\Concrete\Employees.cs" />
     <Compile Include="Entities\Concrete\Products.cs" />
@@ -66,6 +62,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\BaseRepositories\IBaseRepository.cs" />
+    <Compile Include="Repositories\ConcreteRepositories\CategoryRepository.cs" />
+    <Compile Include="Repositories\ConcreteRepositories\ProductRepository.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

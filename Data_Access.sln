@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeFirst_PhoneDirectory_Ex
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dapper_MicroOrm_Example1", "Dapper_MicroOrm_Example1\Dapper_MicroOrm_Example1.csproj", "{CBF37F74-240B-4B0B-BA72-B91EAD2BAE4A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dapper_CRUD_Example", "Dapper_CRUD_Example\Dapper_CRUD_Example.csproj", "{DEC422B5-239A-42B1-9FBF-F8F14C168E3A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{CBF37F74-240B-4B0B-BA72-B91EAD2BAE4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CBF37F74-240B-4B0B-BA72-B91EAD2BAE4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CBF37F74-240B-4B0B-BA72-B91EAD2BAE4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEC422B5-239A-42B1-9FBF-F8F14C168E3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEC422B5-239A-42B1-9FBF-F8F14C168E3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEC422B5-239A-42B1-9FBF-F8F14C168E3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEC422B5-239A-42B1-9FBF-F8F14C168E3A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

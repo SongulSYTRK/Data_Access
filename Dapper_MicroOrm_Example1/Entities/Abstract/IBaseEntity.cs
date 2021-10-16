@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Dapper_MicroOrm_Example1.Entities.Abstract
 {
-   public abstract class BaseEntity
+   public abstract class IBaseEntity
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]

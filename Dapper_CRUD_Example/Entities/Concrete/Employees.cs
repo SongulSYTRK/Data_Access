@@ -1,4 +1,5 @@
-﻿using Dapper_MicroOrm_Example1.Entities.Abstract;
+﻿
+using Dapper_CRUD_Example.Entities.BaseEntity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Dapper_MicroOrm_Example1.Entities.Concrete
 {
-   public  class Employees:IBaseEntity
+   public  class Employees:BaseEntity
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }

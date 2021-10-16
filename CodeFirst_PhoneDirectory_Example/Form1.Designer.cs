@@ -30,12 +30,12 @@ namespace CodeFirst_PhoneDirectory_Example
         private void InitializeComponent()
         {
             this.grpPhoneDirectory = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtname = new System.Windows.Forms.TextBox();
-            this.txtphonenumber = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnInsert = new System.Windows.Forms.Button();
+            this.txtphonenumber = new System.Windows.Forms.TextBox();
+            this.txtname = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.grpPhoneDirectory.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -54,14 +54,30 @@ namespace CodeFirst_PhoneDirectory_Example
             this.grpPhoneDirectory.TabStop = false;
             this.grpPhoneDirectory.Text = "Phone Directory";
             // 
-            // label1
+            // btnInsert
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(45, 45);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(49, 17);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Name ";
+            this.btnInsert.BackColor = System.Drawing.SystemColors.Info;
+            this.btnInsert.Location = new System.Drawing.Point(104, 131);
+            this.btnInsert.Name = "btnInsert";
+            this.btnInsert.Size = new System.Drawing.Size(121, 56);
+            this.btnInsert.TabIndex = 4;
+            this.btnInsert.Text = "İNSERT";
+            this.btnInsert.UseVisualStyleBackColor = false;
+            this.btnInsert.Click += new System.EventHandler(this.btnInsert_Click);
+            // 
+            // txtphonenumber
+            // 
+            this.txtphonenumber.Location = new System.Drawing.Point(178, 78);
+            this.txtphonenumber.Name = "txtphonenumber";
+            this.txtphonenumber.Size = new System.Drawing.Size(141, 22);
+            this.txtphonenumber.TabIndex = 3;
+            // 
+            // txtname
+            // 
+            this.txtname.Location = new System.Drawing.Point(178, 39);
+            this.txtname.Name = "txtname";
+            this.txtname.Size = new System.Drawing.Size(141, 22);
+            this.txtname.TabIndex = 2;
             // 
             // label2
             // 
@@ -72,19 +88,14 @@ namespace CodeFirst_PhoneDirectory_Example
             this.label2.TabIndex = 1;
             this.label2.Text = "PhoneNumber ";
             // 
-            // txtname
+            // label1
             // 
-            this.txtname.Location = new System.Drawing.Point(178, 39);
-            this.txtname.Name = "txtname";
-            this.txtname.Size = new System.Drawing.Size(141, 22);
-            this.txtname.TabIndex = 2;
-            // 
-            // txtphonenumber
-            // 
-            this.txtphonenumber.Location = new System.Drawing.Point(178, 78);
-            this.txtphonenumber.Name = "txtphonenumber";
-            this.txtphonenumber.Size = new System.Drawing.Size(141, 22);
-            this.txtphonenumber.TabIndex = 3;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(45, 45);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(49, 17);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Name ";
             // 
             // dataGridView1
             // 
@@ -96,17 +107,6 @@ namespace CodeFirst_PhoneDirectory_Example
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(372, 417);
             this.dataGridView1.TabIndex = 1;
-            // 
-            // btnInsert
-            // 
-            this.btnInsert.BackColor = System.Drawing.SystemColors.Info;
-            this.btnInsert.Location = new System.Drawing.Point(100, 135);
-            this.btnInsert.Name = "btnInsert";
-            this.btnInsert.Size = new System.Drawing.Size(121, 56);
-            this.btnInsert.TabIndex = 4;
-            this.btnInsert.Text = "İNSERT";
-            this.btnInsert.UseVisualStyleBackColor = false;
-            this.btnInsert.Click += new System.EventHandler(this.btnInsert_Click);
             // 
             // Form1
             // 

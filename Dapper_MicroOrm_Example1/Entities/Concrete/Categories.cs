@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace Dapper_MicroOrm_Example1.Entities.Concrete
 {
-   public  class Categories:BaseEntity
+   public  class Categories:IBaseEntity
     {
         public int CategoryID { get; set; }
         public string CategoryName { get; set; }
