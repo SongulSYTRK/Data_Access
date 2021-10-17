@@ -29,19 +29,19 @@ namespace Dapper_CRUD_Example
             product.ProductName = txtProductName.Text;
             product.UnitPrice =int.Parse( txtUnitpriceProduct.Text);
             product.UnitsInStock = int.Parse(txtunitInStockCreate.Text);
-            productRepo.Create(product, dataGridView1);
+            
             product.CreateDate = DateTime.Now;
-
+            productRepo.Create(product, dataGridView1);
         }
 
         private void button1_Click(object sender, EventArgs e)//Delete
         {
             Products product = new Products();            
             product.ProductID = int.Parse(txtId.Text);
-            productRepo.Delete(product, dataGridView1);
+            
             product.Status = Status.Passive;
-          
-         
+            productRepo.Delete(product, dataGridView1);
+
 
         }
 
@@ -58,8 +58,9 @@ namespace Dapper_CRUD_Example
             product.ProductName = txtNameUpdatePRoduct.Text;
             product.UnitPrice = int.Parse(txtUnitpriceProduct.Text);
             product.UnitsInStock = int.Parse(txtUnitstockUpdateProduct.Text);
-            productRepo.Update(product, dataGridView1);
+            
             product.Status = Status.Modified;
+            productRepo.Update(product, dataGridView1);
         }
         #endregion
         #region Categories CRUD
@@ -84,8 +85,9 @@ namespace Dapper_CRUD_Example
             Categories categories = new Categories();
             
             categories.CategoryId = int.Parse(txtCatgoryID.Text);
-            categoryRepo.Delete(categories, dataGridView1);
+           
             categories.Status = Status.Passive;
+            categoryRepo.Delete(categories, dataGridView1);
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
@@ -95,9 +97,9 @@ namespace Dapper_CRUD_Example
             categories.CategoryId = int.Parse(txtCatgoryID.Text);
             categories.CategoryName = txtCategoryName.Text;
             categories.Description = txtDescription.Text;
-            categoryRepo.Update(categories, dataGridView1);
+           
             categories.Status = Status.Passive;
-
+            categoryRepo.Update(categories, dataGridView1);
         }
         #endregion
     }

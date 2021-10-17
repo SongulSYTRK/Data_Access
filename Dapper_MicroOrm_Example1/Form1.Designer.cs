@@ -44,6 +44,10 @@ namespace Dapper_MicroOrm_Example1
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.btnFirstOrdeFault = new System.Windows.Forms.Button();
             this.btnSingleOrDefault = new System.Windows.Forms.Button();
+            this.btnJoin = new System.Windows.Forms.Button();
+            this.btnStoreProcedure_Example = new System.Windows.Forms.Button();
+            this.btnSum = new System.Windows.Forms.Button();
+            this.btnGorupby = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
@@ -130,7 +134,7 @@ namespace Dapper_MicroOrm_Example1
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(476, 12);
+            this.button5.Location = new System.Drawing.Point(737, 13);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(102, 72);
             this.button5.TabIndex = 7;
@@ -149,7 +153,7 @@ namespace Dapper_MicroOrm_Example1
             // 
             // btnQuarySingle
             // 
-            this.btnQuarySingle.Location = new System.Drawing.Point(584, 12);
+            this.btnQuarySingle.Location = new System.Drawing.Point(845, 13);
             this.btnQuarySingle.Name = "btnQuarySingle";
             this.btnQuarySingle.Size = new System.Drawing.Size(103, 72);
             this.btnQuarySingle.TabIndex = 9;
@@ -159,7 +163,7 @@ namespace Dapper_MicroOrm_Example1
             // 
             // btnQueryMultiple
             // 
-            this.btnQueryMultiple.Location = new System.Drawing.Point(693, 14);
+            this.btnQueryMultiple.Location = new System.Drawing.Point(954, 15);
             this.btnQueryMultiple.Name = "btnQueryMultiple";
             this.btnQueryMultiple.Size = new System.Drawing.Size(76, 71);
             this.btnQueryMultiple.TabIndex = 10;
@@ -179,7 +183,7 @@ namespace Dapper_MicroOrm_Example1
             // 
             // btnFirstOrdeFault
             // 
-            this.btnFirstOrdeFault.Location = new System.Drawing.Point(476, 92);
+            this.btnFirstOrdeFault.Location = new System.Drawing.Point(737, 93);
             this.btnFirstOrdeFault.Name = "btnFirstOrdeFault";
             this.btnFirstOrdeFault.Size = new System.Drawing.Size(102, 72);
             this.btnFirstOrdeFault.TabIndex = 12;
@@ -189,7 +193,7 @@ namespace Dapper_MicroOrm_Example1
             // 
             // btnSingleOrDefault
             // 
-            this.btnSingleOrDefault.Location = new System.Drawing.Point(584, 90);
+            this.btnSingleOrDefault.Location = new System.Drawing.Point(845, 91);
             this.btnSingleOrDefault.Name = "btnSingleOrDefault";
             this.btnSingleOrDefault.Size = new System.Drawing.Size(100, 72);
             this.btnSingleOrDefault.TabIndex = 13;
@@ -197,11 +201,55 @@ namespace Dapper_MicroOrm_Example1
             this.btnSingleOrDefault.UseVisualStyleBackColor = true;
             this.btnSingleOrDefault.Click += new System.EventHandler(this.btnSingleOrDefault_Click);
             // 
+            // btnJoin
+            // 
+            this.btnJoin.Location = new System.Drawing.Point(311, 92);
+            this.btnJoin.Name = "btnJoin";
+            this.btnJoin.Size = new System.Drawing.Size(102, 72);
+            this.btnJoin.TabIndex = 14;
+            this.btnJoin.Text = "Join";
+            this.btnJoin.UseVisualStyleBackColor = true;
+            this.btnJoin.Click += new System.EventHandler(this.btnJoin_Click);
+            // 
+            // btnStoreProcedure_Example
+            // 
+            this.btnStoreProcedure_Example.Location = new System.Drawing.Point(573, 15);
+            this.btnStoreProcedure_Example.Name = "btnStoreProcedure_Example";
+            this.btnStoreProcedure_Example.Size = new System.Drawing.Size(116, 71);
+            this.btnStoreProcedure_Example.TabIndex = 15;
+            this.btnStoreProcedure_Example.Text = "StoreProcedure_Example";
+            this.btnStoreProcedure_Example.UseVisualStyleBackColor = true;
+            this.btnStoreProcedure_Example.Click += new System.EventHandler(this.btnStoreProcedure_Example_Click);
+            // 
+            // btnSum
+            // 
+            this.btnSum.Location = new System.Drawing.Point(420, 15);
+            this.btnSum.Name = "btnSum";
+            this.btnSum.Size = new System.Drawing.Size(96, 70);
+            this.btnSum.TabIndex = 16;
+            this.btnSum.Text = "Sum";
+            this.btnSum.UseVisualStyleBackColor = true;
+            this.btnSum.Click += new System.EventHandler(this.btnSum_Click);
+            // 
+            // btnGorupby
+            // 
+            this.btnGorupby.Location = new System.Drawing.Point(420, 93);
+            this.btnGorupby.Name = "btnGorupby";
+            this.btnGorupby.Size = new System.Drawing.Size(96, 70);
+            this.btnGorupby.TabIndex = 17;
+            this.btnGorupby.Text = "GroupBy";
+            this.btnGorupby.UseVisualStyleBackColor = true;
+            this.btnGorupby.Click += new System.EventHandler(this.btnGorupby_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1056, 450);
+            this.Controls.Add(this.btnGorupby);
+            this.Controls.Add(this.btnSum);
+            this.Controls.Add(this.btnStoreProcedure_Example);
+            this.Controls.Add(this.btnJoin);
             this.Controls.Add(this.btnSingleOrDefault);
             this.Controls.Add(this.btnFirstOrdeFault);
             this.Controls.Add(this.dataGridView2);
@@ -242,6 +290,10 @@ namespace Dapper_MicroOrm_Example1
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.Button btnFirstOrdeFault;
         private System.Windows.Forms.Button btnSingleOrDefault;
+        private System.Windows.Forms.Button btnJoin;
+        private System.Windows.Forms.Button btnStoreProcedure_Example;
+        private System.Windows.Forms.Button btnSum;
+        private System.Windows.Forms.Button btnGorupby;
     }
 }
 
